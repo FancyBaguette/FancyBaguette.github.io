@@ -1,4 +1,11 @@
 # ***FancyBaguette.github.io***
 My github.io page repository
 
-![burynyuu](https://c.tenor.com/yySj-rH2-84AAAAd/neco-arc-dance.gif)
+## **Root folder**
+index.html & style-index.html -> Core home page files<br>
+index-images -> folder for home page's images
+
+## **Frontendchallange subfolder**
+Folder containing design challanges from frontendmentor.io<br>
+*Note: full, most recently updated solutions are hosted within a separate repository*
+
