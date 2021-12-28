@@ -7,5 +7,5 @@ index-images -> folder for home page's images
 
 ## **Frontendchallange subfolder**
 Folder containing design challanges from frontendmentor.com<br>
-*Note: full solutions are hosted within a separate repository*
+*Note: full, most recently updated solutions are hosted within a separate repository*
 
