@@ -1,0 +1,117 @@
+body {
+    font-family: "Red Hat Display";  /* wtf */
+    margin: 0;
+}
+
+.a-cancel {
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.a-cancel:hover {
+    text-decoration: underline;
+}
+
+.webpage-container {
+    background-color: hsl(225, 100%, 94%);
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-size: 100vw 100vh;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: 1rem;
+    width: 31.25rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-banner {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-image: url('./images/illustration-hero.svg');
+    width: 31.25rem;
+    height: 13.7rem;
+    display: flex;
+}
+
+.card-title {
+    margin-top: 0.5rem;
+    color: hsl(223, 47%, 23%);
+    width: 31.25rem;
+    min-height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-weight: 900; 
+    font-size: 1.750em;
+}
+
+.card-message {
+    color: hsl(224, 23%, 55%);
+    width: 21.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-meta-wrapper {
+    margin-top: 0.5rem;
+}
+
+.card-meta {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 0.5rem;
+    color: white;
+    width: 21.25rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-payment {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    width: 21.25rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-payment:hover {
+    background-color: hsl(245, 76%, 65%);
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.card-cancel-payment {
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 21.25rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
