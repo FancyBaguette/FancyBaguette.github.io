@@ -2,7 +2,7 @@
 My github.io page repository
 
 ## **Root folder**
-index.html & style-index.html -> Core home page files
+index.html & style-index.html -> Core home page files<br>
 index-images -> folder for home page's images
 
 ## **Frontendchallange subfolder**
