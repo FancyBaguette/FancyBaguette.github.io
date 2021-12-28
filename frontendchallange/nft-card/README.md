@@ -1,1 +1,1 @@
-# Website repository
+# The NFT card project subfolder
