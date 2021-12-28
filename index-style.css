@@ -5,11 +5,11 @@ body {
 
 a {
     text-decoration: none;
-    color:wheat;
+    color: wheat;
 }
 
 a:hover {
-    color:rgb(245, 186, 76);
+    color: rgb(245, 186, 76);
     transition: color 0.2s;
 }
 
