@@ -14,7 +14,7 @@ a:hover {
 }
 
 .webpage-container {
-    background: linear-gradient(270deg, #323297, #9529a4, #890f5c);
+    background: linear-gradient(270deg, #2797dc, #1ec98a, #42cf14);
     background-size: 600% 600%;
     -webkit-animation: gradientAnimation 30s ease infinite;
     -moz-animation: gradientAnimation 30s ease infinite;
