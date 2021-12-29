@@ -11,19 +11,35 @@ body {
 
 /* === TEXT CLASSES === */
 
-.no-decoration {
+a.no-decoration {
     text-decoration: none;
 }
 
-.a-cancel {
+a.cancel {
     color: hsl(224, 23%, 55%);
     font-weight: 700;
     text-decoration: none;
 }
 
-.a-change {
+a.change {
     color:hsl(245, 75%, 61%);
     font-weight: 700;
+}
+
+h2.title {
+    font-weight: 900; 
+    font-size: 1.750em;
+}
+
+/* === SPANS === */
+
+.card-meta-title-text { 
+    color: hsl(223, 47%, 23%);
+    font-weight: 600;
+}
+
+.card-meta-title-price { 
+    color: hsl(224, 23%, 55%);
 }
 
 /* === HOVER STATES === */
@@ -87,11 +103,6 @@ body {
     justify-content: center;
 }
 
-.title {
-    font-weight: 900; 
-    font-size: 1.750em;
-}
-
 .card-message {
     color: hsl(224, 23%, 55%);
     width: 21.25rem;
@@ -119,15 +130,6 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-}
-
-.card-meta-title-text { /* SPAN */
-    color: hsl(223, 47%, 23%);
-    font-weight: 600;
-}
-
-.card-meta-title-price { /* SPAN */
-    color: hsl(224, 23%, 55%);
 }
 
 .card-meta-option {
@@ -171,7 +173,7 @@ body {
     justify-content: center;
 }
 
-.a-attribution {
+a.attribution {
     color:hsl(224, 23%, 55%);
     text-decoration: none;
 }
