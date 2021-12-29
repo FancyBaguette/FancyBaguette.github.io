@@ -1,7 +1,11 @@
+/* === HTML TAGS === */
+
 body {
     font-family: "Red Hat Display";  /* wtf */
     margin: 0;
 }
+
+/* === TEXT CLASSES === */
 
 .no-decoration {
     text-decoration: none;
@@ -13,14 +17,22 @@ body {
     text-decoration: none;
 }
 
+.a-change {
+    color:hsl(245, 75%, 61%);
+    font-weight: 700;
+}
+
+/* === HOVER STATES === */
+
 .a-cancel:hover {
     text-decoration: underline;
 }
 
-.a-change {
-    color:hsl(245, 76%, 65%);
-    font-weight: 700;
+.card-payment:hover {
+    cursor: pointer;
 }
+
+/* === MAIN FLEXBOX CONTAINER === */
 
 .webpage-container {
     background-color: hsl(225, 100%, 94%);
@@ -40,6 +52,8 @@ body {
       background-image: url('./images/pattern-background-mobile.svg')
     }
   }
+
+/* === DIVS === */
 
 .card {
     background-color: white;
@@ -113,7 +127,6 @@ body {
 }
 
 .card-meta-option {
-    color:hsl(245, 76%, 65%);
     width: 10rem;
     display: flex;
     align-items: center;
@@ -122,6 +135,7 @@ body {
 
 .card-payment {
     background-color: hsl(245, 75%, 52%);
+    box-shadow: 0 4px 2px -2px hs;
     font-weight: 700;
     color: white;
     border-radius: 0.5rem;
@@ -130,10 +144,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.card-payment:hover {
-    cursor: pointer;
 }
 
 .card-cancel-payment {
@@ -147,7 +157,7 @@ body {
     justify-content: center;
 }
 
-/* ATTRIBUTION */
+/* === ATTRIBUTION === */
 .attribution {
     width: 31.25rem;
     margin-top: 1rem;
