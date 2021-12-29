@@ -23,6 +23,7 @@ body {
 
 .a-change {
     color:hsl(245, 75%, 61%);
+    font-size: 0.938em;
     font-weight: 700;
 }
 
@@ -73,7 +74,7 @@ body {
 .card {
     background-color: white;
     border-radius: 1rem;
-    width: 31.25rem;
+    width: 26rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -85,8 +86,9 @@ body {
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     background-image: url('./images/illustration-hero.svg');
-    width: 31.25rem;
-    height: 13.7rem;
+    background-size: contain;
+    width: 26rem;
+    height: 12.7rem;
     display: flex;
 }
 
