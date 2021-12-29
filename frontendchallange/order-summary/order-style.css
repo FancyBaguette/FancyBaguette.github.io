@@ -27,6 +27,10 @@ body {
     font-weight: 700;
 }
 
+.title {
+    font-size: 1.8em;
+}
+
 /* === HOVER STATES === */
 
 .a-cancel:hover {
@@ -74,7 +78,7 @@ body {
 .card {
     background-color: white;
     border-radius: 1rem;
-    width: 26rem;
+    width: 27rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -87,13 +91,13 @@ body {
     border-top-right-radius: 1rem;
     background-image: url('./images/illustration-hero.svg');
     background-size: contain;
-    width: 26rem;
+    width: 27rem;
     height: 12.7rem;
     display: flex;
 }
 
 .card-title {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     color: hsl(223, 47%, 23%);
     display: flex;
     align-items: center;
@@ -114,6 +118,7 @@ body {
     border-radius: 0.5rem;
     margin-top: 0.5rem;
     margin-bottom: 2rem;
+    padding: 0.5rem;
     color: white;
     width: 21.25rem;
     height: 5rem;
