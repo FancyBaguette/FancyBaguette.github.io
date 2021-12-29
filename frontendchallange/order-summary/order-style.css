@@ -11,35 +11,19 @@ body {
 
 /* === TEXT CLASSES === */
 
-a.no-decoration {
+.no-decoration {
     text-decoration: none;
 }
 
-a.cancel {
+.a-cancel {
     color: hsl(224, 23%, 55%);
     font-weight: 700;
     text-decoration: none;
 }
 
-a.change {
+.a-change {
     color:hsl(245, 75%, 61%);
     font-weight: 700;
-}
-
-h2.title {
-    font-weight: 900; 
-    font-size: 1.750em;
-}
-
-/* === SPANS === */
-
-.card-meta-title-text { 
-    color: hsl(223, 47%, 23%);
-    font-weight: 600;
-}
-
-.card-meta-title-price { 
-    color: hsl(224, 23%, 55%);
 }
 
 /* === HOVER STATES === */
@@ -50,6 +34,17 @@ h2.title {
 
 .card-payment:hover {
     cursor: pointer;
+}
+
+/* SPANS */
+
+.card-meta-title-text { /* SPAN */
+    color: hsl(223, 47%, 23%);
+    font-weight: 600;
+}
+
+.card-meta-title-price { /* SPAN */
+    color: hsl(224, 23%, 55%);
 }
 
 /* === MAIN FLEXBOX CONTAINER === */
@@ -173,7 +168,7 @@ h2.title {
     justify-content: center;
 }
 
-a.attribution {
+.a-attribution {
     color:hsl(224, 23%, 55%);
     text-decoration: none;
 }
