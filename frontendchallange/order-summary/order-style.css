@@ -38,6 +38,7 @@ body {
 }
 
 .title {
+    font-weight: 900;
     font-size: 1.8em;
 }
 
@@ -54,8 +55,8 @@ body {
 /* SPANS */
 
 .card-meta-title-text { /* SPAN */
-    color: hsl(223, 47%, 23%);
     font-weight: 600;
+    color: hsl(223, 47%, 23%);
 }
 
 .card-meta-title-price { /* SPAN */
@@ -168,8 +169,9 @@ body {
 
 /* === ATTRIBUTION === */
 .attribution {
+    font-size: 0.8em;
     width: 31.25rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     color: hsl(223, 47%, 23%);
     display: flex;
     align-items: center;
