@@ -35,7 +35,7 @@ body {
     justify-content: center;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 600px) {
     .webpage-container {
       background-image: url('./images/pattern-background-mobile.svg')
     }
@@ -133,9 +133,7 @@ body {
 }
 
 .card-payment:hover {
-    background-color: hsl(224, 23%, 55%);
     cursor: pointer;
-    transition: background-color .5s;
 }
 
 .card-cancel-payment {
@@ -149,12 +147,11 @@ body {
     justify-content: center;
 }
 
-
 /* ATTRIBUTION */
 .attribution {
     width: 31.25rem;
     margin-top: 1rem;
-    color:hsl(223, 47%, 23%);
+    color: hsl(223, 47%, 23%);
     display: flex;
     align-items: center;
     justify-content: center;
