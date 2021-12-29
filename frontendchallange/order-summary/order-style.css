@@ -17,6 +17,11 @@ body {
     text-decoration: underline;
 }
 
+.a-change {
+    color:hsl(245, 76%, 65%);
+    font-weight: 700;
+}
+
 .webpage-container {
     background-color: hsl(225, 100%, 94%);
     background-image: url('./images/pattern-background-desktop.svg');
@@ -30,11 +35,16 @@ body {
     justify-content: center;
 }
 
+@media only screen and (max-width: 375px) {
+    .webpage-container {
+      background-image: url('./images/pattern-background-mobile.svg')
+    }
+  }
+
 .card {
     background-color: white;
     border-radius: 1rem;
     width: 31.25rem;
-    height: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -102,8 +112,17 @@ body {
     color: hsl(224, 23%, 55%);
 }
 
+.card-meta-option {
+    color:hsl(245, 76%, 65%);
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
 .card-payment {
     background-color: hsl(245, 75%, 52%);
+    font-weight: 700;
     color: white;
     border-radius: 0.5rem;
     width: 21.25rem;
@@ -111,13 +130,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
 }
 
 .card-payment:hover {
-    background-color: hsl(245, 76%, 65%);
+    background-color: hsl(224, 23%, 55%);
     cursor: pointer;
-    transition: background-color .5s ease-in-out;
+    transition: background-color .5s;
 }
 
 .card-cancel-payment {
@@ -129,4 +147,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+/* ATTRIBUTION */
+.attribution {
+    width: 31.25rem;
+    margin-top: 1rem;
+    color:hsl(223, 47%, 23%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.a-attribution {
+    color:hsl(224, 23%, 55%);
+    text-decoration: none;
 }
