@@ -1,4 +1,4 @@
-# ***https://www.fancybaguette.github.io***
+# ***https://fancybaguette.github.io***
 My github.io page repository
 
 ## **Root folder**
