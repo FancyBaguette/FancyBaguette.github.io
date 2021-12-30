@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
     <link rel="stylesheet" href="index-style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,22 +9,35 @@
 </head>
 <body>
     <main class="webpage-container">
-        <div class="header">
-            <img class="avatar" src="index-images/avatar.jpg" width="64px" height="64px" alt="avatar"/>
-            <h2>Fancy Baguette</h2>
-        </div>
-            <div class="main">
-                <div class="content-title"><h3 style="margin-bottom: 0;">Welcome 👋</h3></div>
-                    <div class="content-description">
-                        <p><i>Frontend Mentor Challanges</i><br>
-                            • <a href="frontendmentor/nft-card/index.html">NFT Card</a><br>
-                            • <a href="frontendmentor/order-summary/index.html">Order Summary Card (WIP)</a><br><br>
-                            <i>Other</i><br>
-                            • <a href="https://www.github.com/FancyBaguette" target="_blank">My github profile</a><br><br>
-                            <i>Contact</i><br>
-                            • Discord - Fancy Baguette#5955
-                        </p>
-                    </div>
+        <!-- HEADER -->
+        <header class="header">
+            <div class="header-title"><h1 class="header-title-text">Fancy Baguette</h1></div>
+                <div class="header-content">
+                    <button class="header-content-button">Projects</button>
+                    <button class="header-content-button">About</button>
+                    <button class="header-content-button">Stuff</button>
+                </div>
+        </header>
+            <!-- MAIN CONTENT -->
+            <div class="main-content-wrapper">
+                <div class="banner">
+                    <h1 class="banner-heading">Welcome 👋</h1>
+                    <p class="banner-text"><i>This is my homepage! And this site is still <b>WORK IN PROGRESS!</b></i>
+                    <p class="banner-text"><i><b>but check out the responsitivity</b></i>
+                </div>
+
+                <div class="article-container">
+                    <div class="article-title"><h2>My recent projects</h2></div>
+                        <article class="project-card">
+                            <div class="project-card-screenshot1"><img class="screenshot" src="index-images/screenshot1.png" alt="screenshot1"></div>
+                                <div class="project-card-title"><a href="frontendmentor/order-summary/index.html">Order Summary Component | Frontend Mentor</a></div>
+                        </article>
+
+                        <article class="project-card" style="margin-top: 0.5rem;">
+                            <div class="project-card-screenshot"><img class="screenshot" src="index-images/screenshot2.png" alt="screenshot2"></div>
+                                <div class="project-card-title"><a href="frontendmentor/nft-card/index.html">NFT Preview card | Frontend Mentor</a></div>
+                        </article>
+                </div>
             </div>
     </main>
 </body>
