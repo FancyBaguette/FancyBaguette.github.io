@@ -4,7 +4,14 @@
 
 /* === HTML TAGS === */
 
+html {
+    width: 100%;
+    height: 100%;
+}
+
 body {
+    width: 100%;
+    height: 100%;
     background-color: hsl(225, 100%, 94%);
     background-image: url('./images/pattern-background-desktop.svg');
     background-size: 100% 40%;
@@ -66,8 +73,8 @@ body {
 /* === MAIN FLEXBOX CONTAINER === */
 
 .webpage-container {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;

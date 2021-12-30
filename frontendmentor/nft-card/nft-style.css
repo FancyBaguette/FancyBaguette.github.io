@@ -5,7 +5,7 @@ body {
 
 img {
     max-width: 100%;
-    max-height: 100%;
+    height: auto;
 }
 
 a {
@@ -103,12 +103,12 @@ a {
     flex-direction: row;
 }
 
-p.item-price {
+.item-price {
     margin-left: 0.5rem;
     color: hsl(178, 100%, 50%);
 }
 
-p.item-timeleft {
+.item-timeleft {
     margin-left: 0.5rem;
     color: hsl(215, 51%, 70%);
 }
@@ -129,7 +129,7 @@ p.item-timeleft {
     border-radius: 1rem;
 }
 
-p.item-creator-name {
+.item-creator-name {
     margin: 0;
     font-size: 1.125em;
     color: hsl(215, 51%, 70%);
