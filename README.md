@@ -1,9 +1,13 @@
-# ***💻 https://fancybaguette.github.io***
-- My github.io page repository<br>
-- I mainly use this site for hosting my Frontend Mentor challange solutions<br>
-- New home page work in progress. This will be my first RWD attempt.
+# **🖥 https://fancybaguette.github.io/**
+- My github.io page repository
+- I mainly use this site for hosting my Frontend Mentor challange solutions
+- New home page work in progress. This is my first RWD attempt.
+
+## **📚 Used libraries**
+- ![Animate.css](animate.style)
 
 ## **📁 Frontendmentor subfolder**
+
 Folder containing design challanges from frontendmentor.io
 
 **Finished projects:** 
