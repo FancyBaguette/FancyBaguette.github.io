@@ -18,9 +18,9 @@
         <header class="header">
             <div class="header-title animate__animated animate__fadeInDown"><h1 class="header-title-text">Fancy Baguette</h1></div>
                 <div class="header-content">
-                    <button class="header-content-button animate__animated animate__fadeInDown">Projects</button>
-                    <button class="header-content-button animate__animated animate__fadeInDown">About</button>
-                    <button class="header-content-button animate__animated animate__fadeInDown">Stuff</button>
+                    <a class="header-content-button animate__animated animate__fadeInDown" href="#recentProjects">Projects</a>
+                    <a class="header-content-button animate__animated animate__fadeInDown" href="#about">About</a>
+                    <a class="header-content-button animate__animated animate__fadeInDown" href="#">Links</a>
                 </div>
         </header>
             <!-- MAIN CONTENT -->
@@ -30,10 +30,11 @@
                     <p class="banner-text animate__animated animate__fadeInLeftBig"><i>This is my homepage!<br> <b>- WORK IN PROGRESS -</b></i></p>
                 </div>
 
-                <div class="article-container">
+                <!-- RECENT PROJECTS SECTION -->
+                <section class="section-container" id="recentProjects">
                     <div class="article-title"><h2>My recent projects</h2></div>
                         <article class="project-card">
-                            <div class="project-card-screenshot1"><img class="screenshot" src="index-images/screenshot1.png" alt="screenshot1"></div>
+                            <div class="project-card-screenshot"><img class="screenshot" src="index-images/screenshot1.png" alt="screenshot1"></div>
                                 <div class="project-card-title"><a href="frontendmentor/order-summary/index.html">Order Summary Component | Frontend Mentor</a></div>
                         </article>
 
@@ -41,8 +42,28 @@
                             <div class="project-card-screenshot"><img class="screenshot" src="index-images/screenshot2.png" alt="screenshot2"></div>
                                 <div class="project-card-title"><a href="frontendmentor/nft-card/index.html">NFT Preview card | Frontend Mentor</a></div>
                         </article>
+                </section>
 
-                </div>
+                <!-- ABOUT SECTION -->
+                <section class="section-container" id="about">
+                    <div class="article-title"><h2>About</h2></div>
+                        <article class="article-content-box">
+                            <header class="article-content-box-header">
+                                <img class="avatar" src="index-images/avatar.jpg">
+                                <div class="article-content-box-title">Hello!</div>
+                            </header>
+
+                            <div class="article-content-box-text">
+                                <p>Three big balls, look like we playing tennis
+                                    He got a big dick, I think his name Dennis
+                                    I jerk his dick until that nigga finish
+                                    His dick big and green, it taste just like spinach
+                                    Dudes, dudes, I love when they send me all the nudes
+                                    Had to make him nut 'cause his balls were blue
+                                    He didn't have a clue</p>
+                            </div>
+                        </article>
+                </section>
             </div>
     </main>
 </body>
