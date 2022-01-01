@@ -5,26 +5,25 @@
 /* === CSS VARIABLES === */
 
     :root {
-        /* Color palette 
-        based on https://colorhunt.co/palette/191a191e51284e9f3dd8e9a8 */
-            /* Main colors - Shades of black */
+        /* https://colorhunt.co/palette/191a191e51284e9f3dd8e9a8
+        /* Main colors - Shades of black */
             --color-dark: rgb(25, 26, 25);
             --color-lightdark: rgb(37, 39, 37); /* custom entry */
             --color-lightdark1: rgb(54, 58, 54); /* custom entry - button bg */
             --color-lightdark2: rgb(70, 73, 70); /* custom entry - button hover */
-            /* Green accents */
+        /* Green accents */
             --color-darkgreen: rgb(30, 81, 40);
             --color-green: rgb(78, 159, 61);
             --color-lightgreen: rgb(216, 233, 168);
 
         /* Font weights */
-        --fontweight-regular: 400;
-        --fontweight-bold: 700;
+            --fontweight-regular: 400;
+            --fontweight-bold: 700;
 
         /* Font sizes */
 
         /* Other */
-        --text-gradient: linear-gradient(270deg, #31c0cb, #7ede9d, #bde25a);
+            --text-gradient: linear-gradient(270deg, #31c0cb, #7ede9d, #bde25a);
 
     }
 
