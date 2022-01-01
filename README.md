@@ -4,7 +4,7 @@
 - New home page work in progress. This will be my first RWD attempt.
 
 ## **📁 Frontendmentor subfolder**
-Folder containing design challanges from frontendmentor.io<br>
+Folder containing design challanges from frontendmentor.io
 
 **Finished projects:** 
 - NFT Preview Card
