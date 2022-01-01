@@ -134,7 +134,7 @@
     }
 
     .main-content-wrapper {
-        width: 100%;
+        width: 80%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -219,7 +219,7 @@
                 /* === SECTIONS DIVS === */
 
                 .article-content-box {
-                    width: 90%;
+                    width: 80%;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -262,6 +262,7 @@
 
     @media screen and (min-width: 810px) {
 
+        /* HEADER */
         .header {
             flex-direction: row;
         }
@@ -277,8 +278,16 @@
             transition: height 1s;
         }
 
-        .main-content-wrapper {
-            flex-direction: row;
+        .article-title {
+            width: 81%;
+            font-size: 2em;
+            display: flex;
+            align-items: center;
+            justify-content: left;
         }
+
+            .project-card-title {
+                font-size: 1.2em;
+            }
 
     }
