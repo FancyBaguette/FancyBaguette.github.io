@@ -79,8 +79,6 @@
         background-color: var(--color-dark);
         color: white;
         width: 100%;
-        height: auto;
-        top: 0; /* does nothing but is necessary for sticky to work */
         position: sticky;
         display: flex;
         flex-direction: column;
@@ -288,6 +286,9 @@
 
         /* HEADER */
         .header {
+            height: auto;
+            top: 0; /* does nothing but is necessary for sticky to work */
+            position: sticky;
             flex-direction: row;
         }
 
