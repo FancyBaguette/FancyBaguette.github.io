@@ -34,7 +34,9 @@
 
 /* === HTML TAGS === */
 
-    * {
+    *,
+    *::before,
+    *::after {
         box-sizing: border-box;
         scrollbar-color: #383c3e #16191a;
     }
@@ -61,6 +63,17 @@
         width: 100%;
         height: auto;
     }
+
+/* === UTILITY === */
+
+    .no-margin {
+        margin: 0;
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+      }
 
 /* === MAIN FLEXBOX CONTAINER === */
 
@@ -191,7 +204,16 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-            } 
+            }
+
+            .article-subtitle {
+                font-weight: var(--fontweight-regular);
+                text-shadow: 1px 1px 5px var(--color-lightblue);
+                padding: 0.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
 
                 /* === PROJECT SECTION === */
 
@@ -229,44 +251,7 @@
 
                 /* === SECTIONS DIVS === */
 
-                .article-content-box {
-                    width: 80%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                }
 
-                .article-content-box-header {
-                    width: 80%;
-                    display: flex;
-                    flex-direction: row;
-                }
-
-                    .avatar {
-                        max-width: 128px;
-                        max-height: 128px;
-                        border: 1px solid white;
-                        border-radius: 300px;
-                    }
-
-                    .article-content-box-title {
-                        width: 40%;
-                        font-weight: var(--fontweight-bold);
-                        font-size: 1.4em;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                    }
-
-                .article-content-box-text {
-                    width: 80%;
-                    margin-top: 0.5rem;
-                    text-align: justify;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
     
         .footer {
             color: white;
@@ -285,9 +270,6 @@
 
         /* HEADER */
         .header {
-            height: auto;
-            top: 0; /* does nothing but is necessary for sticky to work */
-            position: sticky;
             flex-direction: row;
         }
 
