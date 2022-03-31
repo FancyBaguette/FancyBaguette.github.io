@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="converter-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VW to PX Converter</title>
+    <meta name="author" content="Fancy"/>
+    <meta name="description" content="Simple VW to PX converter for use in CSS development"/>
+    <meta name="keywords" content="css, converter, css tools, html tools, html, vw to px, vw to px converter"/>
+        <!-- START DISCORD TAGS -->
+            <meta property="og:type" content="website"/>
+            <meta property="og:title" content="VW to PX Converter"/>
+            <meta property="og:description" content="A simple vw to px converter for use in CSS development"/>
+            <meta property="og:url" content="https://fancybaguette.github.io/projects/converter.html"/>
+            <meta property="og:image" content="https://fancybaguette.github.io/index-images/screenshot4.png"/>
+        <!-- END DISCORD TAGS -->
+    <link rel="icon" sizes="32x32" href="https://fancybaguette.github.io/index-images/favicon.png"/>
+</head>
+<body>
+    <main class="flexbox-main animate__animated animate__fadeInUp">
+        <header class="header"><h1>VW to PX Converter</h1></header>
+        <section class="main-section">
+        <p class="info-text">
+            1. Provide your viewport's width (<i>most commonly 1920px</i>)<br>2. Provide the viewport width unit<br>3. Press Enter / Click CONVERT
+        </p>
+
+        <form style="font-size: 24px;">
+            <center>
+            <label for="viewportWidthInput">Viewport width</label>
+            <input class="input-button" type="number" id="viewportWidthInput"> px<br><br>
+            <label for="vwUnitInput">Viewport width unit</label>
+            <input class="input-button" type="number" id="vwUnitInput"> vw<br><br>
+            <input class="convert-button" type="button" id="submit" value="CONVERT" onclick="calculate(this.form)">
+            </center>
+        </form>
+        <span id="resultSpan" class="result-span">Waiting for input</span>
+
+        <span style="margin: 3rem 0 3rem 0; text-align: center; font-size: 13px;">
+            <i>
+            <a href="https://github.com/FancyBaguette" target="_blank">Github</a><br>
+            <a href="https://fancybaguette.github.io">Return to homepage</a><br>
+            </i>
+        </span>
+        
+        <script>
+            function calculate(formcopy) {
+                var x = Number((formcopy.viewportWidthInput.value));
+                var y = Number((formcopy.vwUnitInput.value));
+                var result = x*y/100;
+                if (x<=0||y<=0) {
+                    document.getElementById("resultSpan").innerHTML="Invalid data input";
+                }
+                else
+                document.getElementById("resultSpan").innerHTML=result+"px";
+            }
+
+            var input = document.getElementById("vwUnitInput");
+            input.addEventListener("keyup", function(event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                document.getElementById("submit").click();
+            }
+            });
+        </script>
+    </section>
+    </main>
+</body>
+</html>
