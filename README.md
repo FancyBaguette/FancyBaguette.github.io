@@ -13,3 +13,10 @@ Folder containing design challanges from frontendmentor.io
 **Finished projects:** 
 - NFT Preview Card
 - Order Summary Component
+
+## **📁 Projects subfolder**
+
+Folder containing all the other stuff that isn't frontendmentor challanges
+
+**Current projects:** 
+- VW to PX Converter
