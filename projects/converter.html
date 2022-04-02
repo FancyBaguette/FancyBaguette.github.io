@@ -8,15 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VW to PX Converter</title>
     <meta name="author" content="Fancy"/>
-    <meta name="description" content="Simple VW to PX converter for use in CSS development"/>
-    <meta name="keywords" content="css, converter, css tools, html tools, html, vw to px, vw to px converter"/>
-        <!-- START DISCORD TAGS -->
+    <meta name="description" content="A simple vw to px converter for use in CSS development"/>
+    <meta name="keywords" content="css, converter, css tools, html tools, vw to px, vw to px converter"/>
+        <!-- START EMBED TAGS -->
             <meta property="og:type" content="website"/>
             <meta property="og:title" content="VW to PX Converter"/>
             <meta property="og:description" content="A simple vw to px converter for use in CSS development"/>
             <meta property="og:url" content="https://fancybaguette.github.io/projects/converter.html"/>
             <meta property="og:image" content="https://fancybaguette.github.io/index-images/screenshot4.png"/>
-        <!-- END DISCORD TAGS -->
+        <!-- END EMBED TAGS -->
     <link rel="icon" sizes="32x32" href="https://fancybaguette.github.io/index-images/favicon.png"/>
 </head>
 <body>
@@ -40,7 +40,7 @@
 
         <span style="margin: 3rem 0 3rem 0; text-align: center; font-size: 13px;">
             <i>
-            <a href="https://github.com/FancyBaguette" target="_blank">Github</a><br>
+            <a href="https://github.com/FancyBaguette/FancyBaguette.github.io/blob/main/projects/converter.html" target="_blank">Github</a><br>
             <a href="https://fancybaguette.github.io">Return to homepage</a><br>
             </i>
         </span>
@@ -57,16 +57,16 @@
                 document.getElementById("resultSpan").innerHTML=result+"px";
             }
 
-            var input = document.getElementById("vwUnitInput");
-            input.addEventListener("keyup", function(event) {
+            var input1 = document.getElementById("vwUnitInput");
+            input1.addEventListener("keyup", function(event) {
             if (event.keyCode === 13) {
                 event.preventDefault();
                 document.getElementById("submit").click();
             }
             });
 
-            var input = document.getElementById("viewportWidthInput");
-            input.addEventListener("keyup", function(event) {
+            var input2 = document.getElementById("viewportWidthInput");
+            input2.addEventListener("keyup", function(event) {
             if (event.keyCode === 13) {
                 event.preventDefault();
                 document.getElementById("submit").click();
