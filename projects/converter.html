@@ -19,7 +19,7 @@
         <!-- END EMBED TAGS -->
     <link rel="icon" sizes="32x32" href="https://fancybaguette.github.io/index-images/favicon.png"/>
 </head>
-<body>
+<body id="body">
     <main class="flexbox-main animate__animated animate__fadeInUp">
         <header class="header"><h1>VW to PX Converter</h1></header>
         <section class="main-section">
@@ -42,6 +42,7 @@
             <i>
             <a href="https://github.com/FancyBaguette/FancyBaguette.github.io/blob/main/projects/converter.html" target="_blank">Github</a><br>
             <a href="https://fancybaguette.github.io">Return to homepage</a><br>
+            <a href="#" onclick="disableBackground()">Disable</a> / <a href="#" onclick="enableBackground()">Enable</a> <span style="color: aquamarine">background animation</span>
             </i>
         </span>
         
@@ -56,6 +57,17 @@
                 else
                 document.getElementById("resultSpan").innerHTML=result+"px";
             }
+
+            function disableBackground() {
+                var body = document.getElementById("body");
+                body.classList.add("disableAnimation");
+            }
+
+            function enableBackground() {
+                var body = document.getElementById("body");
+                body.classList.remove("disableAnimation");
+            }
+
 
             var input1 = document.getElementById("vwUnitInput");
             input1.addEventListener("keyup", function(event) {

@@ -17,11 +17,20 @@ body {
     height: 100%;
     margin: 0;
     overflow: hidden;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
     background: linear-gradient(270deg, #82eb74, #74ebc5, #74c3eb, #8474eb);
     background-size: 800% 800%;
     -webkit-animation: bgGradient 10s ease infinite;
     -moz-animation: bgGradient 10s ease infinite;
     animation: bgGradient 10s ease infinite;
+}
+
+.disableAnimation {
+    background-size: 100%;
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    animation: none !important;
 }
 
 a {
@@ -30,17 +39,6 @@ a {
 }
 
 /* DIVS */
-
-.header {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(17, 16, 16, 0.9);
-    border: 1px solid black;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
 
 .flexbox-main { /* MAIN FLEXBOX CONTAINER */
     width: 100%;
@@ -51,6 +49,17 @@ a {
     justify-content: center;
     align-items: center;
     color: white;
+}
+
+.header {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(17, 16, 16, 0.9);
+    border: 1px solid black;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
     .main-section {
@@ -114,4 +123,23 @@ a {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
+}
+
+@media screen and (max-width: 811px) {
+
+    body {
+        overflow: scroll;
+    }
+
+    .header {
+        width: 85%;
+    }
+
+    .main-section {
+        width: 85%;
+    }
+
+    #resultSpan {
+        text-align: center;
+    }
 }
