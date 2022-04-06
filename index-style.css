@@ -83,11 +83,33 @@
         font: inherit;
     }
 
-
 /* === UTILITY === */
 
     .no-margin {
         margin: 0;
+    }
+
+    #go-to-top-btn {
+        display: none;
+        position: fixed; 
+        bottom: 20px; 
+        right: 10px; 
+        z-index: 99; 
+        border: none; 
+        outline: none; 
+        background-image: var(--gradient);
+        transition: display 1s;
+        color: white; 
+        cursor: pointer; 
+        padding: 0.5em;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px; 
+        font-size: 18px; 
+    }
+
+    #go-to-top-btn:hover {
+        border: 1px solid white;
     }
 
 /* === MAIN FLEXBOX CONTAINER === */
@@ -284,7 +306,11 @@
 
 /* === MEDIA QUERIES (styling for desktop) === */
 
-    @media screen and (min-width: 811px) { /* 810px is the max width of all the provided devices in Firefox's web tools */
+    @media screen and (min-width: 811px) {
+
+        #go-to-top-btn {
+            right: 40px;
+        }
 
         /* HEADER */
         .header {
