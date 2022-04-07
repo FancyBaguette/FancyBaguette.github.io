@@ -106,7 +106,7 @@ select {
 }
 
     .card-container {
-        width: 65%;
+        max-width: 85%;
         height: 100%;
         display: grid;
         grid-template-columns: repeat(3,1fr);
