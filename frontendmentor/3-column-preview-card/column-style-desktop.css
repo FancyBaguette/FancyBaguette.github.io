@@ -106,7 +106,7 @@ select {
 }
 
     .card-container {
-        max-width: 85%;
+        max-width: 65%;
         height: 100%;
         display: grid;
         grid-template-columns: repeat(3,1fr);
@@ -127,7 +127,6 @@ select {
     }
 
     .card-paragraph {
-        text-align: justify;
         font-family: var(--fnt-sans);
         font-size: 16px;
         color: var(--clr-white-trans);
