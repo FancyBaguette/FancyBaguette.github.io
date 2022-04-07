@@ -98,7 +98,6 @@
         border: none; 
         outline: none; 
         background-image: var(--gradient);
-        transition: display 1s;
         color: white; 
         cursor: pointer; 
         padding: 0.5em;
