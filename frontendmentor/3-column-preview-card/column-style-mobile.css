@@ -145,7 +145,7 @@ select {
                 font-family: var(--fnt-sans);
                 background-color: var(--clr-light-gray);
                 border: none;
-                min-width: 70%;
+                min-width: 50%;
                 border-radius: 30px;
                 margin-top: 2rem;
                 margin-bottom: 1rem;
