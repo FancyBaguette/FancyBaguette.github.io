@@ -1,3 +1,6 @@
+let lastModifiedDate = document.lastModified;
+document.getElementById('lastModifiedSpan').innerHTML='Site was last modified at '+lastModifiedDate+' (MM/DD/YYYY)';
+
 button = document.getElementById("go-to-top-btn");
 
 window.onscroll = function() {scrollFunction()};

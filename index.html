@@ -124,10 +124,16 @@
         </main> 
 
         <footer class="footer animate__animated animate__fadeInUp">
-            <a href="https://github.com/FancyBaguette">Github</a>
+            <p>
+                <a href="https://github.com/FancyBaguette">Github</a><br>
+                <span id="lastModifiedSpan"></span>
+            </p>
         </footer>
     </main>
-
+    <script>
+        let lastModifiedDate = document.lastModified;
+        document.getElementById('lastModifiedSpan').innerHTML='Site was last modified at '+lastModifiedDate+' (MM/DD/YYYY)';
+    </script>
     <script src="main.js"></script>
 </body>
 </html>

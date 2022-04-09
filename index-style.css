@@ -318,6 +318,24 @@
             justify-content: center;
         }
 
+            .footer p {
+                margin: 0;
+                text-align: center;
+                color: var(--color-light2);
+            }
+
+            #lastModifiedSpan::before {
+                content: '';
+                display: inline-block;
+                width: 1em;
+                height: 1em;
+                background-image: url(./icons/clock.svg);
+                background-size: 1em 1em;
+                background-position: center;
+                vertical-align: middle;
+                margin-right: 5px;
+            }
+
 
 /* === MEDIA QUERIES (styling for desktop) === */
 
