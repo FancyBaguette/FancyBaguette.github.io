@@ -10,9 +10,11 @@
 
 Folder containing design challanges from frontendmentor.io
 
-**Finished projects:** 
-- NFT Preview Card
-- Order Summary Component
+**Finished projects (*newest to oldest*):** 
+- Huddle landing page
+- 3-Column preview card
+- Order summary component
+- NFT Preview card component
 
 ## **📁 Projects subfolder**
 
