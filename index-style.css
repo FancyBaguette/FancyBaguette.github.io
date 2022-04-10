@@ -260,7 +260,8 @@
                     max-width: 80%;
                 }
 
-                    /* Apply the rules to every 'screenshot' class in every 'project-card-grid-container' div upon 'a' tag hover */
+                    /* Apply the rules to every 'screenshot' class in every 'project-card-grid-container' div 
+                    upon 'a' tag hover that is inside the specified div */
                     .project-card-grid-container a:hover .screenshot {
                         transform: scale(1.125);
                         transition: transform 1s;
