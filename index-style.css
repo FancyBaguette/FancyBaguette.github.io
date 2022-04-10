@@ -263,8 +263,8 @@
                     /* Apply the rules to every 'screenshot' class in every 'project-card-grid-container' div 
                     upon 'a' tag hover that is inside the specified div */
                     .project-card-grid-container a:hover .screenshot {
-                        transform: scale(1.125) rotate(0.01deg);
-                        /* rotate stops the image from jumping */
+                        transform: scale3d(1.125);
+                        /* scale3d instead of regular scale stops the image from jumping */
                         transition: transform 0.5s;
                     }
 
@@ -287,13 +287,15 @@
                     }
 
                     .screenshot {
-                        border-top-left-radius: 10px;
-                        border-top-right-radius: 10px;
+                        border-top-left-radius: 8.5px;
+                        border-top-right-radius: 8.5px;
                         transition: transform 0.5s; /* make the transistion revert smoothly */
                     }
 
                     /* required so that the screenshot doesn't overflow */
                     .screenshot-wrapper {
+                        width: 100%;
+                        height: 100%;
                         overflow: hidden;
                     }
 
