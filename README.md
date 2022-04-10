@@ -4,7 +4,7 @@
 - New home page work in progress. This is my first RWD attempt.
 
 ## **📚 Used libraries**
-- ![Animate.css](animate.style)
+- ![Animate.css](https://www.animate.style)
 
 ## **📁 Frontendmentor subfolder**
 
