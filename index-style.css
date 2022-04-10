@@ -72,7 +72,6 @@
         max-width: 100%;
         height: auto;
         display: block;
-        object-fit: contain;
     }
 
     input,
@@ -264,7 +263,8 @@
                     /* Apply the rules to every 'screenshot' class in every 'project-card-grid-container' div 
                     upon 'a' tag hover that is inside the specified div */
                     .project-card-grid-container a:hover .screenshot {
-                        transform: scale(1.125);
+                        transform: scale(1.125), rotate(0.01deg);
+                        /* rotate stops the image from jumping */
                         transition: transform 0.5s;
                     }
 
