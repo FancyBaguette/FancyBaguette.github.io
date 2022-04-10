@@ -20,7 +20,7 @@
     <link rel="icon" sizes="32x32" href="index-images/favicon.png"/>
 </head>
 <body>
-    <button onclick="goToTop()" id="go-to-top-btn" title="Scroll to top">&#8593;</button>
+    <button class="animate__animated animate__fadeInUp" onclick="goToTop()" id="go-to-top-btn" title="Scroll to top">&#8593;</button>
 
     <main class="webpage-container">
         <!-- HEADER -->
@@ -62,28 +62,36 @@
 
                         <a href="frontendmentor/huddle-landing-page/index.html"> <!-- start item -->
                             <article class="project-card">
-                                <img class="screenshot" src="index-images/screenshot5.png" alt="Huddle landing page screenshot">
+                                <div class="screenshot-wrapper">
+                                    <img class="screenshot" src="index-images/screenshot5.png" alt="Huddle landing page screenshot">
+                                </div>
                                 <div class="project-card-title">Huddle landing page</div> 
                             </article>
                         </a> <!-- end item -->
 
                         <a href="frontendmentor/3-column-preview-card/index.html">
                             <article class="project-card">
-                                <img class="screenshot" src="index-images/screenshot3.png" alt="3-Column preview card screenshot">
+                                <div class="screenshot-wrapper">
+                                    <img class="screenshot" src="index-images/screenshot3.png" alt="3-Column preview card screenshot">
+                                </div>
                                 <div class="project-card-title">3-Column preview card</div> 
                             </article>
                         </a>
 
                         <a href="frontendmentor/order-summary/index.html">
                             <article class="project-card">
-                                <img class="screenshot" src="index-images/screenshot1.png" alt="Order summary component screenshot">
+                                <div class="screenshot-wrapper">
+                                    <img class="screenshot" src="index-images/screenshot1.png" alt="Order summary component screenshot">
+                                </div>
                                 <div class="project-card-title">Order summary component</div> 
                             </article>
                         </a>
 
                         <a href="frontendmentor/nft-card/index.html">
                             <article class="project-card">
-                                <img class="screenshot" src="index-images/screenshot2.png" alt="NFT Preview card component screenshot">
+                                <div class="screenshot-wrapper">
+                                    <img class="screenshot" src="index-images/screenshot2.png" alt="NFT Preview card component screenshot">
+                                </div>
                                 <div class="project-card-title">NFT Preview card component</div> 
                             </article>
                         </a>
@@ -92,10 +100,14 @@
 
                     <div class="article-subtitle"><h4 class="no-margin" style="margin-top: 1rem;">Other projects</h4></div>
                     <div class="project-card-grid-container"> <!-- start grid container -->
-                        <article class="project-card">
-                            <img class="screenshot" src="index-images/screenshot4.png" alt="vw to px converter screenshot">
-                                <div class="project-card-title"><a href="projects/converter.html">VW to PX Converter</a></div>
-                        </article>
+                        <a href="projects/converter.html">
+                            <article class="project-card">
+                                <div class="screenshot-wrapper">
+                                    <img class="screenshot" src="index-images/screenshot4.png" alt="vw to px converter screenshot">
+                                </div>
+                                <div class="project-card-title">VW to PX Converter</div>
+                            </article>
+                        </a>
 
                         <article class="project-card">
                             <img class="screenshot" src="index-images/placeholder.png" alt="Placeholder image">
