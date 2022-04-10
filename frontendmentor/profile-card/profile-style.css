@@ -166,15 +166,17 @@ select {
 .card-profile-stats {
     margin-top: .5rem;
     margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
 }
 
     .stats-item {
         padding: 1rem;
         display: grid;
         place-items: center;
+        min-width: 33.33%;
     }
 
     .stats-item-header {
