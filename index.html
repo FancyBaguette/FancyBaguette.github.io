@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="index-style.css"/>
+    <link rel="stylesheet" href="/src/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="Fancy"/>
     <meta name="description" content="My github page"/>
@@ -14,138 +15,260 @@
             <meta property="og:title" content="Fancy Baguette"/>
             <meta property="og:description" content="My github page"/>
             <meta property="og:url" content="https://fancybaguette.github.io"/>
-            <meta property="og:image" content="https://fancybaguette.github.io/index-images/avatar.jpg"/>
+            <meta property="og:image" content="https://fancybaguette.github.io/src/imgs/avatar.jpg"/>
         <!-- END EMBED TAGS -->
-    <title>Fancy Baguette | Home</title>
-    <link rel="icon" sizes="32x32" href="index-images/favicon.png"/>
+    <title>Fancy Baguette</title>
 </head>
 <body>
-    <button class="animate__animated animate__fadeInUp" onclick="goToTop()" id="go-to-top-btn" title="Scroll to top">&#8593;</button>
-
-    <main class="webpage-container">
-        <!-- HEADER -->
-        <header class="header" id="header">
-            <div class="header-title animate__animated animate__fadeInDown"><h1 class="header-title-text">Fancy Baguette</h1></div>
-                <div class="header-content">
-                    <a class="header-content-button animate__animated animate__fadeInDown" href="#recentProjects">Projects</a>
-                        <div class="header-content-button-separator animate__animated animate__fadeInDown"></div>
-                    <a class="header-content-button animate__animated animate__fadeInDown" href="#about">About</a>
-                        <div class="header-content-button-separator animate__animated animate__fadeInDown"></div>
-                    <a class="header-content-button animate__animated animate__fadeInDown" href="#">Links</a>
-                </div>
-        </header>
-
-        <!-- BANNER -->
-        <div class="banner-wrapper">
-            <div class="banner">
-                <h1 class="banner-heading">Welcome</h1>
-                <p class="banner-text"><i>This is my homepage<br> <b>- WORK IN PROGRESS -</b></i></p>
+    <header class="page-header">
+        <div class="page-header-part"><h1>Fancy Baguette</h1></div>
+        <div class="page-header-part">
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#">Homepage</a></li>
+                    <li><a href="#challanges">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="https://github.com/FancyBaguette" target="_blank">Github</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="banner-left animate__animated animate__fadeInLeft">
+            <div class="banner-left-profile-picture-bg">
+                <div class="banner-left-profile-picture"></div>
             </div>
         </div>
+        <div class="banner-right animate__animated animate__fadeInRight">
+            <h1>hi i'm <span class="span-key">fancy</span></h1>
+            <p>I learn web stuff</p>
+            <span style="font-size: 0.8em;"><i>The geralt image is a placeholder</i></span>
+            <a class="learn-more-btn" href="#challanges">SEE MY WORK</a>
+        </div>
+    </div>
 
-        <!-- MAIN CONTENT SECTION -->
-        <main class="main-content-wrapper animate__animated animate__fadeInUp">
-            <section class="section-container" id="recentProjects"> <!-- RECENT PROJECTS -->
-                <div class="article-title"><h2>My recent projects</h2></div>
-                    <div class="article-subtitle"><h4 class="no-margin">Frontend Mentor Challanges</h4></div>
-                    <div class="project-card-grid-container"> <!-- start grid container -->
+    <main class="main-content">
+        <section>
+            <div class="section-header" id="challanges"><h1>FRONTENDMENTOR CHALLANGES</h1></div>
+            <div class="section-content-grid">
 
-                        <article class="project-card">
-                            <img class="screenshot" src="index-images/placeholder.png" alt="Placeholder image">
-                                <div class="project-card-title-placeholder"><i>Soon</i></div>
-                        </article>
+                <article class="project-card placeholder-card">
+                </article>
 
-                        <a href="frontendmentor/profile-card/index.html">
-                            <article class="project-card">
-                                <div class="screenshot-wrapper">
-                                    <img class="screenshot" src="index-images/screenshot6.png" alt="Profile card screenshot">
-                                </div>
-                                <div class="project-card-title">Profile card</div> 
-                            </article>
-                        </a>
+                <article class="project-card">
+                    <div class="screenshot-wrapper">
+                        <img class="screenshot" src="/src/imgs/screenshot6.png">
+                    </div>
+                    <div class="project-card-content">
+                        <h2>PROFILE CARD</h2>
+                            <div class="project-card-content-btn-container">
+                                <a href="/frontendmentor/profile-card/index.html">
+                                    <button class="project-card-content-btn-site">LIVE SITE</button>
+                                </a>
+                                <a href="https://github.com/FancyBaguette/FancyBaguette.github.io/tree/main/frontendmentor/profile-card">
+                                    <button class="project-card-content-btn-code">SEE CODE</button>
+                                </a>
+                            </div>
+                    </div>
+                </article>
 
-                        <a href="frontendmentor/huddle-landing-page/index.html"> <!-- start item -->
-                            <article class="project-card">
-                                <div class="screenshot-wrapper">
-                                    <img class="screenshot" src="index-images/screenshot5.png" alt="Huddle landing page screenshot">
-                                </div>
-                                <div class="project-card-title">Huddle landing page</div> 
-                            </article>
-                        </a> <!-- end item -->
+                <article class="project-card">
+                    <div class="screenshot-wrapper">
+                        <img class="screenshot" src="/src/imgs/screenshot5.png">
+                    </div>
+                    <div class="project-card-content">
+                        <h2>HUDDLE LANDING PAGE</h2>
+                            <div class="project-card-content-btn-container">
+                                <a href="/frontendmentor/huddle-landing-page/index.html">
+                                    <button class="project-card-content-btn-site">LIVE SITE</button>
+                                </a>
+                                <a href="https://github.com/FancyBaguette/FancyBaguette.github.io/tree/main/frontendmentor/huddle-landing-page">
+                                    <button class="project-card-content-btn-code">SEE CODE</button>
+                                </a>
+                            </div>
+                    </div>
+                </article>
 
-                        <a href="frontendmentor/3-column-preview-card/index.html">
-                            <article class="project-card">
-                                <div class="screenshot-wrapper">
-                                    <img class="screenshot" src="index-images/screenshot3.png" alt="3-Column preview card screenshot">
-                                </div>
-                                <div class="project-card-title">3-Column preview card</div> 
-                            </article>
-                        </a>
+                <article class="project-card">
+                    <div class="screenshot-wrapper">
+                        <img class="screenshot" src="/src/imgs/screenshot3.png">
+                    </div>
+                    <div class="project-card-content">
+                        <h2>3-COLUMN PREVIEW CARD</h2>
+                            <div class="project-card-content-btn-container">
+                                <a href="/frontendmentor/3-column-preview-card/index.html">
+                                    <button class="project-card-content-btn-site">LIVE SITE</button>
+                                </a>
+                                <a href="https://github.com/FancyBaguette/FancyBaguette.github.io/tree/main/frontendmentor/3-column-preview-card">
+                                    <button class="project-card-content-btn-code">SEE CODE</button>
+                                </a>
+                            </div>
+                    </div>
+                </article>
 
-                        <a href="frontendmentor/order-summary/index.html">
-                            <article class="project-card">
-                                <div class="screenshot-wrapper">
-                                    <img class="screenshot" src="index-images/screenshot1.png" alt="Order summary component screenshot">
-                                </div>
-                                <div class="project-card-title">Order summary component</div> 
-                            </article>
-                        </a>
+                <article class="project-card">
+                    <div class="screenshot-wrapper">
+                        <img class="screenshot" src="/src/imgs/screenshot1.png">
+                    </div>
+                    <div class="project-card-content">
+                        <h2>ORDER SUMMARY COMPONENT</h2>
+                            <div class="project-card-content-btn-container">
+                                <a href="/frontendmentor/profile-card/index.html">
+                                    <button class="project-card-content-btn-site">LIVE SITE</button>
+                                </a>
+                                <a href="https://github.com/FancyBaguette/FancyBaguette.github.io/tree/main/frontendmentor/profile-card">
+                                    <button class="project-card-content-btn-code">SEE CODE</button>
+                                </a>
+                            </div>
+                    </div>
+                </article>
 
-                        <a href="frontendmentor/nft-card/index.html">
-                            <article class="project-card">
-                                <div class="screenshot-wrapper">
-                                    <img class="screenshot" src="index-images/screenshot2.png" alt="NFT Preview card component screenshot">
-                                </div>
-                                <div class="project-card-title">NFT Preview card component</div> 
-                            </article>
-                        </a>
+                <article class="project-card">
+                    <div class="screenshot-wrapper">
+                        <img class="screenshot" src="/src/imgs/screenshot2.png">
+                    </div>
+                    <div class="project-card-content">
+                        <h2>NFT PREVIEW CARD COMPONENT</h2>
+                            <div class="project-card-content-btn-container">
+                                <a href="/frontendmentor/nft-card/index.html">
+                                    <button class="project-card-content-btn-site">LIVE SITE</button>
+                                </a>
+                                <a href="https://github.com/FancyBaguette/FancyBaguette.github.io/tree/main/frontendmentor/nft-card">
+                                    <button class="project-card-content-btn-code">SEE CODE</button>
+                                </a>
+                            </div>
+                    </div>
+                </article>
+                
+            </div>
+        </section>
 
-                    </div> <!-- end grid container -->
+        <section>
+            <div class="section-header"><h1>OTHER PROJECTS</h1></div>
+            <div class="section-content-grid">
 
-                    <div class="article-subtitle"><h4 class="no-margin" style="margin-top: 1rem;">Other projects</h4></div>
-                    <div class="project-card-grid-container"> <!-- start grid container -->
-                        <a href="projects/converter.html">
-                            <article class="project-card">
-                                <div class="screenshot-wrapper">
-                                    <img class="screenshot" src="index-images/screenshot4.png" alt="vw to px converter screenshot">
-                                </div>
-                                <div class="project-card-title">VW to PX Converter</div>
-                            </article>
-                        </a>
+                <article class="project-card">
+                    <div class="screenshot-wrapper">
+                        <img class="screenshot" src="/src/imgs/screenshot4.png">
+                    </div>
+                    <div class="project-card-content">
+                        <h2>VW TO PX CONVERTER</h2>
+                            <div class="project-card-content-btn-container">
+                                <a href="/projects/conveter/converter.html">
+                                    <button class="project-card-content-btn-site">LIVE SITE</button>
+                                </a>
+                                <a href="https://github.com/FancyBaguette/FancyBaguette.github.io/tree/main/projects/converter">
+                                    <button class="project-card-content-btn-code">SEE CODE</button>
+                                </a>
+                            </div>
+                    </div>
+                </article>
 
-                        <article class="project-card">
-                            <img class="screenshot" src="index-images/placeholder.png" alt="Placeholder image">
-                                <div class="project-card-title-placeholder"><i>Soon</i></div>
-                        </article>
+                <article class="placeholder-card project-card">
+                </article>
 
-                        <article class="project-card">
-                            <img class="screenshot" src="index-images/placeholder.png" alt="Placeholder image">
-                                <div class="project-card-title-placeholder"><i>Soon</i></div>
-                        </article>
-                    </div> <!-- end grid container -->
-                    
-            </section>
+                <article class="project-card placeholder-card">
+                </article>
 
-            <section class="section-container" id="about">
-                <div class="article-title"><h2>About</h2></div>
-                    <article class="article-content-box" style="width: 81%; padding: 0.5rem;">
-                        <h2>Hello! ✋</h2>
-                        <p class="about-text">
-                            This website is still kind of a placeholder, it looks decent but since it's basically my
-                            portfolio page i'll have to come up with a better design in the future.<br>
-                            Currently it serves as an echo chamber to display my most recent works and as a way to practice HTML, CSS and JS.
-                        </p>
-                    </article>
-            </section>
-        </main> 
+                </div>
+        </section>
 
-        <footer class="footer animate__animated animate__fadeInUp">
-            <p>
-                <a href="https://github.com/FancyBaguette">Github</a><br>
-                <span id="lastModifiedSpan"></span>
-            </p>
-        </footer>
+        <section>
+            <div class="section-header" id="about"><h1>ABOUT</h1></div>
+            <div class="section-content-flex" style="gap: 5rem; align-items: stretch;">
+                <div class="profile-card"> <!-- start profile card -->
+                    <div class="profile-card-header">
+                        <img src="/src/imgs/gerwalt.PNG">
+                        <h2>FANCY BAGUETTE</h2>
+                    </div>
+                    <div class="profile-card-content">
+                        <div class="skill-wrapper">
+                        <div class="profile-card-stats-heading">HTML<br><span style="color: orange">INTERMEDIATE (5/10)</span></div>
+                            <div class="profile-card-stats-lvl-container">
+                                <div class="lvl-box"></div>
+                                <div class="lvl-box"></div>
+                                <div class="lvl-box"></div>
+                                <div class="lvl-box"></div>
+                                <div class="lvl-box"></div>
+    
+                                <div class="lvl-box box-empty"></div>
+                                <div class="lvl-box box-empty"></div>
+                                <div class="lvl-box box-empty"></div>
+                                <div class="lvl-box box-empty"></div>
+                                <div class="lvl-box box-empty"></div>
+                            </div>    
+                        </div>
+
+                        <div class="skill-wrapper">
+                            <div class="profile-card-stats-heading">CSS<br><span style="color: orange">INTERMEDIATE (5/10)</span></div>
+                            <div class="profile-card-stats-lvl-container">
+                                <div class="lvl-box"></div>
+                                <div class="lvl-box"></div>
+                                <div class="lvl-box"></div>
+                                <div class="lvl-box"></div>
+                                <div class="lvl-box"></div>
+
+                                <div class="lvl-box box-empty"></div>
+                                <div class="lvl-box box-empty"></div>
+                                <div class="lvl-box box-empty"></div>
+                                <div class="lvl-box box-empty"></div>
+                                <div class="lvl-box box-empty"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-wrapper">
+                            <div class="profile-card-stats-heading">JS<br><span style="color: gray">BEGINNER (3/10)</span></div>
+                            <div class="profile-card-stats-lvl-container">
+                                <div class="lvl-box"></div>
+                                <div class="lvl-box"></div>
+                                <div class="lvl-box"></div>
+
+                                <div class="lvl-box box-empty"></div>
+                                <div class="lvl-box box-empty"></div>
+                                <div class="lvl-box box-empty"></div>
+                                <div class="lvl-box box-empty"></div>
+                                <div class="lvl-box box-empty"></div>
+                                <div class="lvl-box box-empty"></div>
+                                <div class="lvl-box box-empty"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end profile card -->
+
+                <div class="bio-card">
+                    <h1>Hello!</h1>
+                    <p>
+                        I'm <strong>Fancy</strong> and this is my redesinged frontpage. It serves as a place to display my recent works.
+                        Currently i'm learning <strong>HTML, CSS & JS</strong> - my skill level in each language, as i perceive it, is shown to the left 
+                        (<em>or above this box, depending on your viewport</em>).
+                    </p>
+                    <p>
+                        On this site you can see all the Frontendmentor challanges i've completed so far and also some mini-projects that
+                        came up in my mind. That's all so far, but this bio section has to look nice so i'll slap some lorem ipsum here until i have more things to say.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia aliquid libero, 
+                        fugit enim magni natus et, dicta ipsam modi dolorem, sint ipsum aperiam amet est vel suscipit. 
+                        Asperiores, odit explicabo.
+                    </p>
+                    <h1>Todo list</h1>
+                    <p>
+                        <ul>
+                            <li>Better responsiveness</li>
+                            <li>Navigation menu for mobile version</li>
+                            <li>Getting some pseudoelements to appear decently on mobile</li>
+                            <li>Finishing up the footer</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
-    <script src="main.js"></script>
+
+    <footer class="page-footer">
+        <div class="page-header-part">@ Fancy Baguette 2022</div>
+        <div class="page-header-part"><a href="/legacy/index.html">>>> LEGACY WEBSITE <<<</a></div>
+    </footer>
 </body>
+<script src="./stickyHeader.js"></script>
 </html>
