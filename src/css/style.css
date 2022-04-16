@@ -1,10 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Serif:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Merriweather+Sans:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-    --fnt-sans: 'Open Sans', sans-serif;
-    --fnt-serif: 'Noto Serif', serif;
+    /* Fonts */
+    --fnt-sans: 'Merriweather Sans', sans-serif;
     --fnt-display: 'Fjalla One', sans-serif;
-    --fnt-slab: 'Roboto Slab', sans-serif;
+    /* Font weights */
+    --light: 300;
+    --regular: 400;
+    --medium: 500;
+    --semibold: 600;
+    --bold: 700;
+    --extrabold: 800;
+    /* Other */
     --gradient1: linear-gradient(270deg, #1ceb8d, #ccf490);
 }
 
@@ -14,7 +21,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    /* outline: 1px solid red !important; */
+    /* outline: 1px solid red !important; -- for "debugging" purposes*/
 }
 
 body,
@@ -100,7 +107,6 @@ body {
 }
 
 .page-header {
-    font-family: var(--fnt-display);
     width: 100%;
     display: flex;
     color: black;
@@ -123,8 +129,10 @@ body {
 }
 
 .page-header-part h1 {
-    letter-spacing: .2ch;
+    letter-spacing: .1ch;
     font-size: 2em;
+    font-weight: var(--extrabold);
+    font-family: var(--fnt-display);
 }
 
     .page-header-part h1::before {
@@ -141,6 +149,7 @@ body {
 
 .nav-list {
     font-family: var(--fnt-sans);
+    font-weight: var(--regular);
     padding: 0;
     margin: 0;
     list-style: none;
@@ -208,8 +217,8 @@ body {
     }
 
     .banner-left-profile-picture-bg::before {
-        font-family: var(--fnt-slab);
-        font-weight: 400;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: var(--light);
         font-size: 2.5em;
         transform: translateX(-3rem) translateY(-4rem);
         width: max-content;
@@ -223,8 +232,6 @@ body {
     }
 
     .banner-left-profile-picture-bg::after {
-        font-family: var(--fnt-display);
-        font-weight: 400;
         font-size: 2em;
         transform: translateX(18rem) translateY(-8rem) rotate(10deg);
         width: max-content;
@@ -248,23 +255,24 @@ body {
 
     .banner-right h1 {
         font-size: 3em;
+        font-weight: var(--regular);
         text-transform: uppercase;
     }
 
     .banner-right p {
-        font-weight: 400;
         font-size: 2em;
+        font-weight: var(--light);
         text-transform: uppercase;
     }
 
     .span-key {
         color: lightseagreen;
-        font-weight: 900;
+        font-weight: var(--extrabold)
     }
 
 .learn-more-btn {
     background: var(--gradient1);
-    font-weight: 600;
+    font-weight: var(--medium);
     border: none;
     color: white;
     border-radius: 15px;
@@ -297,9 +305,10 @@ body {
         margin-top: 10rem;
     }
 
-.section-header {
+.section-header h1 {
     font-family: var(--fnt-display);
-    font-size: 2em;
+    font-weight: var(--extrabold);
+    font-size: 3em;
 }
 
     .section-header h1::before {
@@ -389,7 +398,9 @@ body {
 }
 
     .project-card-content h2 {
-        font-family: var(--fnt-display);
+        font-family: var(--fnt-sans);
+        font-weight: var(--regular);
+        letter-spacing: -0.030em;
         margin-bottom: .5rem;
         text-align: center;
     }
@@ -397,28 +408,25 @@ body {
 .project-card-content-btn-container {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: .5rem;
     align-items: center;
     width: 100%;
 }
 
-    .project-card-content-btn-container a {
-        width: 100%;
-    }
-
-    button[class*='project-card-content-btn'],button[class^='project-card-content-btn'] {
-        font-weight: 600;
-        cursor: pointer;
-        border: none;
+    a[class*='project-card-content-btn'],a[class^='project-card-content-btn'] {
+        font-weight: var(--semibold);
+        width: 25%;
         color: white;
+        text-decoration: none;
         border-radius: 15px;
         width: 100%;
+        text-align: center;
         padding: .2em .5em;
         letter-spacing: .3ch;
         transition: transform .3s, letter-spacing 1s;
     }
 
-    button[class*='project-card-content-btn']:hover,button[class^='project-card-content-btn']:hover {
+    a[class*='project-card-content-btn']:hover,a[class^='project-card-content-btn']:hover {
         letter-spacing: .5ch;
         transition: letter-spacing 1s;
     }
@@ -440,8 +448,6 @@ body {
 }
 
 .profile-card-header {
-    font-family: var(--fnt-display);
-    font-size: 1.125em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -451,10 +457,18 @@ body {
     border-bottom: 1px solid hsla(0, 0%, 20%, 0.2);
 }
 
+    .profile-card-header h2 {
+        font-family: var(--fnt-sans);
+        font-size: 1.5em;
+        font-weight: var(--extrabold);
+    }
+
     .profile-card-header img {
         width: 200px;
         height: 200px;
         border-radius: 100%;
+        border: 5px dashed hsla(0, 0%, 20%, 0.2);
+        padding: .5rem;
     }
 
 .profile-card-content {
@@ -469,6 +483,33 @@ body {
     font-family: var(--fnt-sans);
     font-weight: 900;
     font-size: 1.125em;
+}
+
+#html::before {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-image: url(/src/imgs/svg/html-svgrepo-com.svg);
+    content: '';
+    margin-right: .3rem;
+}
+
+#css::before {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-image: url(/src/imgs/svg/css-svgrepo-com.svg);
+    content: '';
+    margin-right: .3rem;
+}
+
+#js::before {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-image: url(/src/imgs/svg/javascript-svgrepo-com.svg);
+    content: '';
+    margin-right: .3rem;
 }
 
     .profile-card-stats-heading span {
@@ -504,11 +545,12 @@ body {
 }
 
 .bio-card:not(h1) {
-    font-family: var(--fnt-serif);
+    font-family: var(--fnt-sans);
+    font-weight: var(--light);
 }
 
 .bio-card h1 {
-    font-family: var(--fnt-display);
+    font-family: var(--fnt-sans);
     font-size: 32px;
 }
 
@@ -517,19 +559,19 @@ body {
     }
 
 .bio-card p {
-    font-size: 1.125em;
+    font-size: 1.1em;
     text-align: justify;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
 .bio-card li {
-    font-size: 1.125em;
+    font-size: 1.1em;
 }
 
 /* FOOTER */
 .page-footer {
-    font-family: var(--fnt-display);
+    font-family: var(--fnt-sans);
     width: 100%;
     display: flex;
     color: black;
@@ -538,9 +580,15 @@ body {
     border-top: 1px solid hsla(0, 0%, 20%, 0.2);
 }
 
+.page-footer a {
+    text-decoration: none;
+    color: #18b971;
+}
+
 /* MEDIA QUERIES */
 
-@media screen and (max-width:810px) { /* MOBILE */
+/* For mobile */
+@media screen and (max-width:810px) {
 
     .page-header {
         flex-direction: column;
