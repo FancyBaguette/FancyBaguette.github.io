@@ -1,7 +1,6 @@
 # **🖥 https://fancybaguette.github.io/**
 - My github.io page repository
 - I mainly use this site for hosting my Frontend Mentor challange solutions
-- New home page work in progress. This is my first RWD attempt.
 
 ## **📚 Used libraries**
 - ![Animate.css](https://www.animate.style)
