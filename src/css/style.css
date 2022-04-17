@@ -154,13 +154,8 @@ body {
     margin: 0;
     list-style: none;
     display: flex;
+    gap: 3.5rem;
 }
-
-    .nav-list li:nth-of-type(-n+3)::after {
-        content: '•';
-        display: inline-block;
-        margin: 0 2rem;
-    }
 
     .nav-list a {
         color: inherit;
@@ -338,6 +333,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 5rem; 
+    align-items: stretch;
 }
 
 .placeholder-card {
@@ -391,7 +388,7 @@ body {
 .project-card-content {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     padding: .5rem;
     flex-direction: column;
     border-top: 1px solid hsla(0, 0%, 20%, 0.2);
@@ -585,10 +582,186 @@ body {
     color: #18b971;
 }
 
+#footerGithub::before {
+    display: inline-block;
+    content: '';
+    width: 2rem;
+    height: 2rem;
+    background-image: url(/src/imgs/svg/github-svgrepo-com.svg);
+}
+
 /* MEDIA QUERIES */
 
+/* Smaller desktop */
+@media screen and (max-width:1300px) {
+
+    .main-content {
+        padding: 2rem 4rem;
+    }
+
+    .section-content-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .placeholder-card:nth-of-type(3) {
+        display: none; /* The third one bugs out with repeat(2,1fr) for some reason */
+    }
+
+}
+
+@media screen and (max-width:1100px) {
+
+    .main-content {
+        padding: 2rem 2rem;
+    }
+
+    .banner-left {
+        padding: 2.5rem 2.5rem;
+    }
+
+    .banner-right {
+        padding: 3.5rem 2.5rem;
+    }
+
+    .section-content-grid {
+        padding: 0;
+    }
+
+    .section-content-flex {
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width:940px) {
+
+    .nav-list {
+        gap: 2rem;
+    }
+
+    .section-content-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .placeholder-card {
+        order: 2;
+    }
+
+    .placeholder-card:nth-of-type(3) {
+        display: none; /* The third one bugs out with repeat(2,1fr) for some reason */
+    }
+
+    .banner-left {
+        padding: 2rem 2rem;
+    }
+
+    .banner-right {
+        padding: 3rem 1.5rem;
+    }
+
+    .banner-left-profile-picture,.banner-left-profile-picture-bg  {
+        width: 350px;
+        height: 350px;
+    }
+
+    .banner-left-profile-picture-bg::before {
+        transform: translateX(-2rem) translateY(-4.5rem);
+    }
+
+    .banner-left-profile-picture-bg::after {
+        transform: translateX(14.5rem) translateY(-6rem) rotate(10deg);
+    }
+
+}
+
+/* Tablets */
+@media screen and (max-width:840px) {
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner-left {
+        width: 100%;
+        padding: 2rem 2rem;
+        font-size: 2.5em;
+    }
+
+    .banner-left-profile-picture,.banner-left-profile-picture-bg  {
+        width: 300px;
+        height: 300px;
+    }
+
+    .banner-left-profile-picture-bg::before {
+        transform: translateX(-2rem) translateY(-4.5rem);
+    }
+
+    .banner-left-profile-picture-bg::after {
+        transform: translateX(14.5rem) translateY(-6rem) rotate(10deg);
+    }
+
+    .banner-right {
+        width: 100%;
+        padding: 3.5rem 2.5rem;
+    }
+
+        .banner-right {
+            display: grid;
+            place-items: center;
+            text-align: center;
+        }
+
+        .learn-more-btn {
+            width: 85%;
+        }
+    
+    .main-content {
+        padding: 2rem 2rem;
+    }
+
+    .section-content-grid {
+        grid-template-columns: repeat(2,1fr);
+        gap: .42rem;
+    }
+
+    .placeholder-card {
+        order: 2;
+    }
+
+    .placeholder-card:nth-of-type(3) {
+        display: none; /* The third one bugs out with repeat(2,1fr) for some reason */
+    }
+
+    .bio-card {
+        max-width: 65%;
+    }
+
+    .section-content-flex {
+        gap: 2rem;
+    }
+
+    .lvl-box {
+        max-width: 50%;
+    }
+    
+    .bio-card {
+        font-size: .9em
+    }
+
+    .profile-card:not(span) {
+        font-size: .9em;
+    }
+
+
+}
+
+
 /* For mobile */
-@media screen and (max-width:810px) {
+@media screen and (max-width:730px) {
+
+    .nav-list {
+        gap: .5rem;
+    }
 
     .page-header {
         flex-direction: column;
@@ -615,10 +788,6 @@ body {
             text-align: center;
             display: grid;
             place-items: center;
-        }
-
-        .nav-list li::after {
-            display: none !important;
         }
 
     .banner {
