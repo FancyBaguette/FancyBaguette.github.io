@@ -761,7 +761,15 @@ body {
 @media screen and (max-width:730px) {
 
     .nav-list {
-        gap: .5rem;
+        gap: .7rem;
+    }
+
+    .nav-list a {
+        padding: 0;
+    }
+
+    .nav-list a:hover {
+        border: none;
     }
 
     .page-header {
