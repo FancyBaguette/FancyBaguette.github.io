@@ -172,6 +172,11 @@ body {
     color: white;
 }
 
+.usage-data-header h1 {
+    font-weight: var(--regular);
+    font-size: 1rem;
+}
+
 .usage-bar {
     box-sizing: content-box;
     display: flex;
