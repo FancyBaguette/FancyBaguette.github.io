@@ -594,7 +594,7 @@ body {
 /* MEDIA QUERIES */
 
 /* Smaller desktop */
-@media screen and (max-width:1300px) {
+@media screen and (max-width:1480px) {
 
     .main-content {
         padding: 2rem 4rem;
