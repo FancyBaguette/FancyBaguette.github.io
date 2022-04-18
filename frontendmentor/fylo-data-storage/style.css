@@ -241,6 +241,8 @@ body {
         font-size: .9em;
     }
 
+
+/* Need to adjust transform values with every sizing change to the bubble */
 .text-bubble::after {
     display: block;
     position: absolute;
@@ -249,6 +251,10 @@ body {
     transform: translateX(140px) translateY(54px);
     content: '';
 }
+
+/* MEDIA QUERIES */
+
+/* Smaller desktop & mobile */
 
 @media screen and (max-width:1340px) {
 
