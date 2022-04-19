@@ -112,16 +112,19 @@ body {
     font-family: var(--fnt-main);
     display: flex;
     align-items: flex-end;
-    gap: 3rem;
+    gap: 2.5rem;
 }
 
 .action-container {
     background-color: var(--clr-darkblue);
-    padding: 2rem 14rem 3rem 3rem;
+    padding: 3rem 8rem 2rem 2.5rem;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    border-top-right-radius: 150px;
+    border-top-right-radius: 100px;
     border-bottom-right-radius: 15px;
+    -webkit-box-shadow: 0px 75px 98px -30px rgba(0,0,0,0.37);
+    -moz-box-shadow: 0px 75px 98px -30px rgba(0,0,0,0.37);
+    box-shadow: 0px 75px 98px -30px rgba(0,0,0,0.37);
 }
 
 .logo {
@@ -129,9 +132,9 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    width: 180px;
-    height: 100px;
-    margin-bottom: 1rem;
+    width: 135px;
+    height: 40px;
+    margin-bottom: 2rem;
 }
 
 .button-container {
@@ -160,9 +163,12 @@ body {
 
 .data-container {
     background-color: var(--clr-darkblue);
-    padding: 2.5rem;
+    padding: 2rem;
     border-radius: 15px;
     width: 40rem;
+    -webkit-box-shadow: 0px 75px 98px -30px rgba(0,0,0,0.37);
+    -moz-box-shadow: 0px 75px 98px -30px rgba(0,0,0,0.37);
+    box-shadow: 0px 75px 98px -30px rgba(0,0,0,0.37);
 }
 
 .usage-data-wrapper {
@@ -205,7 +211,7 @@ body {
     height: 100%;
     border-radius: 100%;
     background-color: white;
-    margin-right: .1rem;
+    margin: .2rem;
 }
 
 .usage-data-values-container {
@@ -218,9 +224,9 @@ body {
     align-items: center;
     justify-content: baseline;
     position: absolute;
-    transform: translateX(22rem) translateY(-5.8rem);
+    transform: translateX(25rem) translateY(-5rem);
     background-color: white;
-    padding: .5rem 2rem;
+    padding: .3rem 1rem;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -246,7 +252,7 @@ body {
     position: absolute;
     border-top: 32px solid white;
     border-left: 32px solid transparent;
-    transform: translateX(140px) translateY(54px);
+    transform: translateX(124px) translateY(51px);
     content: '';
 }
 
