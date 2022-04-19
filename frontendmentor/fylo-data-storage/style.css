@@ -96,8 +96,8 @@ body {
     background-color: var(--clr-verydarkblue);
     background-image: url(./images/bg-desktop.png);
     background-repeat: no-repeat;
-    background-position: 0px 450px;
-    background-size: cover;
+    background-position: bottom left;
+    background-size: 100vw 50vh;
 }
 
 .webpage-container {
@@ -258,7 +258,8 @@ body {
 
     body {
         background-image: url(./images/bg-mobile.png);
-        background-position: 0px 0px;
+        background-position: center;
+        background-size: 100vw 100vh;
     }
 
 
