@@ -102,6 +102,7 @@ html {
 }
 
 body {
+    font-family: var(--fnt-sans);
     background-color: hsl(0, 0%, 100%);
     overflow-x: hidden;
 }
@@ -344,7 +345,6 @@ body {
 }
 
 .project-card {
-    font-family: var(--fnt-sans);
     display: flex;
     flex-direction: column;
     border: 1px solid hsla(0, 0%, 20%, 0.2);
