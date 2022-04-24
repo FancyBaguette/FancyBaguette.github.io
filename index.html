@@ -20,6 +20,7 @@
     <title>Fancy Baguette</title>
 </head>
 <body>
+
     <header class="page-header">
         <div class="page-header-part"><h1>Fancy Baguette</h1></div>
         <div class="page-header-part">
@@ -48,7 +49,9 @@
 
     <main class="main-content">
         <section>
-            <div class="section-header" id="challanges"><h1>FRONTENDMENTOR CHALLANGES</h1></div>
+            <div class="section-header" id="challanges">
+                <h1>FRONTENDMENTOR CHALLANGES</h1>  <button onclick="showFirstModal()" id="modal1-btn"></button> 
+            </div>
             <div class="section-content-grid">
 
                 <article class="project-card">
@@ -133,7 +136,9 @@
         </section>
 
         <section>
-            <div class="section-header"><h1>OTHER PROJECTS</h1></div>
+            <div class="section-header">
+                <h1>OTHER PROJECTS</h1>  <button onclick="showSecondModal()" id="modal2-btn"></button> 
+            </div>
             <div class="section-content-grid">
 
                 <article class="project-card">
@@ -149,11 +154,24 @@
                     </div>
                 </article>
 
-                <article class="placeholder-card project-card">
+                <article class="project-card">
+                    <div class="screenshot-wrapper">
+                        <img class="screenshot" loading="lazy" src="/src/imgs/screenshot8.png" alt="password generator screenshot">
+                    </div>
+                    <div class="project-card-content">
+                        <h2>PASSWORD GENERATOR</h2>
+                            <div class="project-card-content-btn-container">
+                                <a href="/projects/password-generator/" class="project-card-content-btn-site">LIVE SITE</a>
+                                <a href="https://github.com/FancyBaguette/FancyBaguette.github.io/tree/main/projects/password-generator" class="project-card-content-btn-code">SEE CODE</a>
+                            </div>
+                    </div>
                 </article>
 
                 <article class="project-card placeholder-card">
                 </article>
+
+                <!-- <article class="project-card placeholder-card">
+                </article> -->
 
                 </div>
         </section>
@@ -223,18 +241,16 @@
                 <div class="bio-card">
                     <h1>Hello!</h1>
                     <p>
-                        I'm <strong>Fancy</strong> and this is my redesinged frontpage. It serves as a place to display my recent works.
+                        I'm <strong>Fancy</strong> and this is my redesinged frontpage. It's my second iteration of my "portfolio" page but it's
+                        definitely not the last one.
+                        This page serves as a place to display and host my recent works.
                         Currently i'm learning <strong>HTML, CSS & JS</strong> - my skill level in each language, as i perceive it, is shown to the left 
                         (<em>or above this box, depending on your viewport</em>).
                     </p>
                     <p>
-                        On this site you can see all the Frontendmentor challanges i've completed so far and also some mini-projects that
-                        came up in my mind. That's all so far, but this bio section has to look nice so i'll slap some lorem ipsum here until i have more things to say.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia aliquid libero, 
-                        fugit enim magni natus et, dicta ipsam modi dolorem, sint ipsum aperiam amet est vel suscipit. 
-                        Asperiores, odit explicabo.
+                        On this site you can see all the Frontendmentor challanges i've completed so far and also other projects that
+                        came up in my mind or i did for a certain course. Click on the info buttons to the right of the section headers to learn more about the stuff that you
+                        can find in each section.
                     </p>
                     <h1>Todo list</h1>
                     <p>
@@ -257,5 +273,25 @@
             <a href="https://github.com/FancyBaguette" target="_blank" id="footerGithub"></a>
         </div>
     </footer>
+
+    <!-- SECTION INFO MODALS -->
+    <dialog class="modal" id="modal1">
+        <header class="modal__header"> <h3>Frontendmentor Challanges</h3> <button onclick="closeFirstModal()" class="modal__close" id="modal1close-btn">X</button> </header>
+        <p>
+            Frontendmentor is a website on which you can find various frontend development challanges.<br>
+            You get a design and you have to recreate it on your own using HTML and CSS (sometimes JS too).<br>
+            It's a very good way to practice your skills.
+        </p><br>
+    </dialog>
+
+    <dialog class="modal" id="modal2">
+        <header class="modal__header"> <h3>Other projects</h3> <button onclick="closeSecondModal()" class="modal__close" id="modal2close-btn">X</button> </header>
+        <p>
+            Here are all the other projects that i've completed that aren't from Frontendmentor.<br>
+            Recently i started the <strong>Scrimba JS Beginner Course</strong>, so i'll be
+            adding the solo projects i did to practice my JS skills here as well.
+        </p><br>
+    </dialog>
 </body>
+<script src="src/js/modals.js"></script>
 </html>

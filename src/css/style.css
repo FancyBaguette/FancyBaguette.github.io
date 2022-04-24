@@ -302,6 +302,12 @@ body {
         margin-top: 10rem;
     }
 
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .section-header h1 {
     font-family: var(--fnt-display);
     font-weight: var(--extrabold);
@@ -399,7 +405,6 @@ body {
     .project-card-content h2 {
         font-family: var(--fnt-sans);
         font-weight: var(--regular);
-        letter-spacing: -0.030em;
         margin-bottom: .5rem;
         text-align: center;
     }
@@ -592,6 +597,58 @@ body {
     background-image: url(/src/imgs/svg/github-svgrepo-com.svg);
 }
 
+/* MODALS */
+
+#modal1-btn, #modal2-btn, #modal3-btn {
+    width: 3rem;
+    height: 3rem;
+    background-image: url('/src/imgs/svg/info-circle.svg');
+    background-color: transparent;
+    border: none;
+}
+
+#modal1-btn:hover, #modal2-btn:hover, #modal3-btn:hover {
+    cursor: pointer;
+}
+
+.modal {
+    border: 1px solid hsla(0, 0%, 20%, 0.2);
+    padding: 2rem;
+    line-height: 1.6;
+}
+
+.modal__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.modal__close {
+    background-color: white;
+    color: lightslategray;
+    border: none;
+    padding: 1rem;
+}
+
+.modal__close:hover {
+    cursor: pointer;
+}
+
+.modal h3 {
+    font-size: 1.5rem;
+    font-weight: var(--semibold);
+}
+
+.modal p {
+    font-weight: var(--light);
+}
+
+.modal::backdrop {
+    background: linear-gradient(270deg, #1ceb8d, #ccf490);
+    opacity: .5;
+}
+
 /* MEDIA QUERIES */
 
 /* Smaller desktop */
@@ -656,12 +713,6 @@ body {
 
     .banner-left-profile-picture-bg::after {
         transform: translateX(14.5rem) translateY(-6rem) rotate(10deg);
-    }
-
-    /* Bugs out and shows up as a weird line */
-    /* Need to update the number with every new card added unfortunately */
-    .placeholder-card:nth-of-type(2) {
-        display: none;
     }
 
 }
@@ -830,6 +881,7 @@ body {
     .section-header {
         text-align: center;
         font-size: 1em;
+        flex-direction: column;
     }
 
         .section-header h1::before {
