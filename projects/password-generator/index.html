@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sweetalert2.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,14 +26,12 @@
                 <h1>Generate a <br><span class="header__span__primary">random password</span></h1>
                 <span class="header__span__secondary">Never use an insecure password again.</span>
                 <button onclick="renderPasswords()" class="generate__button">Generate passwords</button>
-                <!-- Tried to do setting the character amount here -->
-                <!-- <form>
-                    <input name="characterInput" type="number" class="character__count__input">
-                    <button class="character__count__input" onclick="getMaxPasswordLength(this.form)">Apply</button>
-                </form> -->
-                <!-- <form>
-                    <input name="characterLength" min="0" max="20" type="range">
-                </form> -->
+                <span class="character__count__text">How many characters should the password have?</span>
+                <div>
+                    <input class="character__count__input" type="tel" maxlength="2" name="characterInput">
+                    <button class="character__count__btn" onclick="getCharacterCount()">Apply</button>
+                </div>
+                <span style="margin-top: .3rem;" class="character__count__text">Current character count: <span class="character__count__display"></span> </span>
             </header>
 
             <div class="spacer"></div>
@@ -56,4 +55,6 @@
     </div>
 </body>
 <script src="index.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="sweetalert2.all.min.js"></script>
 </html>

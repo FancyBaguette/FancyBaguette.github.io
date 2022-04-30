@@ -5,13 +5,10 @@ const passwordSpansArray = [
     document.querySelector('.fourth-password')
 ];
 
-let maxPasswordLength = prompt("How much characters should the password have? (Max 10 characters)")
+const characterInput = document.querySelector('.character__count__input');
+const characterCountSpan = document.querySelector('.character__count__display');
 
-// Null - user pressed Cancel, "" - user pressed OK without providing any number
-if (maxPasswordLength === null || maxPasswordLength === "" || maxPasswordLength > 10) {
-    maxPasswordLength = 10;
-    alert("No character amount specified or the specified amount exceeded 10, setting the amount to 10")
-}
+let maxPasswordLength = 0;
 
 const characters = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z',
                     'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',
@@ -19,9 +16,57 @@ const characters = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O',
                     '!','#','$','%','&','*','^','(',')','@','#','+','-','[',']'
                     ];
 
+function getCharacterCount() {
+    if (characterInput.value > 10 || characterInput.value === "" || characterInput.value === 0) {
+        Swal.fire({
+            color: 'var(--clr-accent',
+            background: 'var(--clr-bg)',
+            scrollbarPadding: false,
+            heightAuto: false,
+            position: 'center',
+            icon: 'error',
+            title: 'Provide a number lower than or equal to 10',
+            showConfirmButton: true,
+          })
+        characterInput.value = "";
+    } else {
+        maxPasswordLength = characterInput.value;
+        characterInput.value = "";
+
+        Swal.fire({
+            color: 'var(--clr-accent',
+            background: 'var(--clr-bg)',
+            scrollbarPadding: false,
+            heightAuto: false,
+            position: 'center',
+            icon: 'success',
+            title: 'Character count successfully applied',
+            showConfirmButton: false,
+            timer: 1000
+        })
+
+        characterCountSpan.textContent = maxPasswordLength;
+
+        renderPasswords();
+    }
+}
+
 function renderPasswords() {
-    for (let i=0; i < passwordSpansArray.length; i++) {
-        passwordSpansArray[i].textContent = password();
+    if (maxPasswordLength === 0) {
+        Swal.fire({
+            color: 'var(--clr-accent',
+            background: 'var(--clr-bg)',
+            scrollbarPadding: false,
+            heightAuto: false,
+            position: 'bottom-center',
+            icon: 'error',
+            title: 'Provide the desired character count first',
+            showConfirmButton: true,
+          })
+    } else {
+        for (let i=0; i < passwordSpansArray.length; i++) {
+            passwordSpansArray[i].textContent = password();
+        }
     }
 }
 
@@ -29,8 +74,8 @@ function password() {
     let generatedPassword = "";
 
     for (let j=0; j < maxPasswordLength; j++) {
-        let randomNumber = Math.floor(Math.random()*characters.length);
-        generatedPassword += characters[randomNumber];
+        let randomIndex = Math.floor(Math.random()*characters.length);
+        generatedPassword += characters[randomIndex];
     }
 
     return generatedPassword;
