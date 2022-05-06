@@ -368,7 +368,8 @@ body {
 
     .project-card:hover .screenshot {
         transform: scale(1.125);
-        transition: transform .5s ease;
+        -webkit-transform: scale(1.125);
+        transition: transform 0.5s ease-in-out;
     }
 
     .project-card:not(.placeholder-card):nth-of-type(2n):hover {
