@@ -10,6 +10,7 @@
 Folder containing design challanges from frontendmentor.io
 
 **Finished projects (*newest to oldest*):** 
+- Fylo data storage
 - Profile card
 - Huddle landing page
 - 3-Column preview card
@@ -22,6 +23,7 @@ Folder containing all the other stuff that isn't frontendmentor challanges
 
 **Current projects:** 
 - VW to PX Converter
+- Password generator
 
 ## **📁 Legacy folder**
 
