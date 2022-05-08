@@ -29,4 +29,4 @@ Folder containing all the other stuff that isn't frontendmentor challanges. Righ
 
 ## **📁 Legacy folder**
 
-Folder containing the old website
+Folder containing the old website / previous iterations of it.
