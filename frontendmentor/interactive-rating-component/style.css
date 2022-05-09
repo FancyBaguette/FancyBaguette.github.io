@@ -112,7 +112,7 @@ body {
 .first-card {
     background-color: var(--clr-dark-blue);
     padding: 2rem 1rem;
-    border-radius: 15px;
+    border-radius: 30px;
 }
 
 .icon-star {
