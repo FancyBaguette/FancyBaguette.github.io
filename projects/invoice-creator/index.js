@@ -58,8 +58,10 @@ for (let i = 0; i < gigBtns.length; i++) {
     gigBtns[i].addEventListener("click", function() {
         tasksUl.innerHTML += 
         `
-            <li>
-                <span class="task-name"> ${tasks[i].name} </span>
+            <li class="li-${i}">
+                <span>
+                    <span class="task-name"> ${tasks[i].name} </span>
+                </span>
                 <span class="task-cost"> ${tasks[i].cost} </span>
             </li>
         `
@@ -68,6 +70,10 @@ for (let i = 0; i < gigBtns.length; i++) {
         gigBtns[i].disabled = true;
     });
 }
+
+// function removeList(listIndex) {
+//     document.remove(this.add--
+// }
 
 sendBtn.addEventListener("click", function() {
     tasksUl.innerHTML="";
