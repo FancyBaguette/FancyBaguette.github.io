@@ -19,4 +19,6 @@ Folder containing all the other stuff that isn't frontendmentor challanges. Righ
 
 Folder containing the old website / previous iterations of it.
 
+<br><br>
+
 **Front end mentor challanges are located in a separate repository**
